@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../Interaccion-Humano-Computador/Tareas/Kindle" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../Interaccion-Humano-Computador/Tareas/Kindle-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Ejemplos/DemoJdbc" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Ejemplos/MicroFrameworkJava-master/SparkBarCamp2014" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Ejemplos/Practica3Blog" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Ejemplos/Programación Web/Prácticas &amp; Tareas/Práctica #2/practica2-programacionweb-oscar-20140056-master/practica2-programacionweb-oscar-20140056-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Ejemplos/Programación Web/Prácticas &amp; Tareas/Práctica #3/practica3-creaciondeblog-http-jdbc-oscar-jean-master/practica3-creaciondeblog-http-jdbc-oscar-jean-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Ejemplos/demosql2o" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Ejemplos/practica2-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Ejemplos/practica3" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Ejemplos/sparkjavaorm" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Tareas/Tarea 1" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Tareas/Tarea 3/arkham.knight-practica3" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Tareas/Tarea 4/arkham.knight.practica4" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1" />
+    <option name="width" value="702" />
+    <option name="height" value="735" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
