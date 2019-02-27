@@ -81,4 +81,15 @@ public class Estudiante {
     public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
+
+    // Metodos
+
+
+
+    public Estudiante encontrarPorMatricula(int matricula, list<Estudiante> listaEstudiante){
+        for (Estudiante estudiante: listaEstudiante) {
+
+        }
+
+    }
 }
