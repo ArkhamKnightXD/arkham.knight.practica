@@ -8,7 +8,7 @@ public class Profesor {
     private String nombre;
     private String apellido;
     private String carrera;
-    private List<Estudiante> listaEstudiantes;
+    public List<Estudiante> listaEstudiantes;
 
     public Profesor() {
     }
@@ -45,13 +45,6 @@ public class Profesor {
         this.carrera = carrera;
     }
 
-    public List<Estudiante> getListaEstudiantes() {
-        return listaEstudiantes;
-    }
-
-    public void setListaEstudiantes(List<Estudiante> listaEstudiantes) {
-        this.listaEstudiantes = listaEstudiantes;
-    }
 
     public Profesor(int id, String nombre, String apellido, String carrera, List<Estudiante> listaEstudiantes) {
         this.id = id;
@@ -63,8 +56,17 @@ public class Profesor {
 
     }
 
+
     //metodos
 
+    public Estudiante encontrarPorMatricula(int matricula, List<Estudiante> listaEstudiantes) { // va recorriendo en un foreach los objetos estudiantes y va iterando uno por uno en la variable estudiante, mientras lo va comparando con el parametro matricula cuando sea igual ahi retornara el estudiante
+        for (Estudiante estudiante : listaEstudiantes) {
+            if (estudiante.getMatricula() == matricula) {
+                return estudiante;
+            }
+        }
 
+        return null;
+    }
 
 }

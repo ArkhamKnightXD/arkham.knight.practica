@@ -1,5 +1,6 @@
 package arkham.knight.practica.encapsulacion;
 
+
 public class Estudiante {
 
     private int matricula;
@@ -82,14 +83,11 @@ public class Estudiante {
         this.telefono = telefono;
     }
 
+
+
     // Metodos
 
 
 
-    public Estudiante encontrarPorMatricula(int matricula, list<Estudiante> listaEstudiante){
-        for (Estudiante estudiante: listaEstudiante) {
 
-        }
-
-    }
 }

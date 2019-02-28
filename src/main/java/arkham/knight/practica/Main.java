@@ -1,6 +1,7 @@
 package arkham.knight.practica;
 
 import arkham.knight.practica.encapsulacion.Estudiante;
+import arkham.knight.practica.encapsulacion.Profesor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,21 +38,44 @@ public class Main {
 
         // funcionamiento de las lista con sus respectivos metodos y el uso de los foreach para recorrer esta coleccion
 
-        List<Estudiante> listaEstudiante = new ArrayList<Estudiante>();
+        Profesor profesorLista = new Profesor();
 
-        listaEstudiante.add(new Estudiante(20141337,"Carlos","perez",21,"ISC",809555470));
-        listaEstudiante.add(new Estudiante(20141337,"Carlos","perez",22,"ISC",809555470));
-        listaEstudiante.add(new Estudiante(20141337,"Carlos","perez",23,"ISC",809555470));
-        listaEstudiante.add(new Estudiante(20141337,"Carlos","perez",24,"ISC",809555470));
+        List<Estudiante> listaEstudiantes = new ArrayList<Estudiante>();
 
 
-        for (Estudiante estudianteForeach : listaEstudiante){
+
+
+        listaEstudiantes.add(new Estudiante(20141337,"Carlos","perez",21,"ISC",809555470));
+        listaEstudiantes.add(new Estudiante(20141338,"naruto","uzumaki",22,"ISC",809555470));
+        listaEstudiantes.add(new Estudiante(20141339,"ichigo","kurosaki",23,"ISC",809555470));
+        listaEstudiantes.add(new Estudiante(20141340,"yugi","moto",24,"ISC",809555470));
+
+        // eliminando elemento se puede eliminar enviando el objeto completo o mandando el numero de la posicion donde esta
+        // el listaestudiantes.get me devuelve el estudiante en la posicion que le mande
+
+        listaEstudiantes.remove(listaEstudiantes.get(2));
+
+
+        for (Estudiante estudianteForeach : listaEstudiantes){
 
             System.out.println(estudianteForeach);
         }
 
+        // cantidad de elementos en la lista
+        System.out.println(listaEstudiantes.size());
 
-        // como encontrar por matricula
+
+
+
+
+        //como encontrar por matricula utilizando un metodo usado en la clase profesor
+
+        Profesor profesorMetodos = new Profesor();
+
+       profesorMetodos.encontrarPorMatricula(20141337, listaEstudiantes);
+
+        
+);
 
 
 
