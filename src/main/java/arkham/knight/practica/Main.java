@@ -74,9 +74,19 @@ public class Main {
 
        profesorMetodos.encontrarPorMatricula(20141337, listaEstudiantes);
 
-        
-);
 
+
+        //implementando singleton
+
+        Estudiante estudianteSingleton = new Estudiante();
+
+        estudianteSingleton.getInstancia().setNombre("karvin2");
+
+        estudianteSingleton.getInstancia().setApellido("singleton");
+
+        System.out.println(estudianteSingleton.getInstancia().getNombre());
+
+        System.out.println(estudianteSingleton.getInstancia().getApellido());
 
 
 

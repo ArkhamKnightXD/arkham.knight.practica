@@ -10,6 +10,19 @@ public class Estudiante {
     private String carrera;
     private int telefono;
 
+    // implementando el patron de diseño singleton que basicamente es crear una instacia que se usara siempre que queramos trabajar con la clase desde otra clase
+
+    private static Estudiante instancia;
+
+    public static Estudiante getInstancia(){
+
+        if (instancia==null){
+            instancia = new Estudiante();
+        }
+
+        return instancia;
+    }
+
 
     public Estudiante() {
     }
