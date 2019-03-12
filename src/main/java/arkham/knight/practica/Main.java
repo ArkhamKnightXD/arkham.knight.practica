@@ -2,6 +2,10 @@ package arkham.knight.practica;
 
 import arkham.knight.practica.encapsulacion.Estudiante;
 import arkham.knight.practica.encapsulacion.Profesor;
+import arkham.knight.practica.encapsulacion.Persona;
+import arkham.knight.practica.implement.PersonaDAOImpl;
+import arkham.knight.practica.interfaces.PersonaDAO;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,6 +91,37 @@ public class Main {
         System.out.println(estudianteSingleton.getInstancia().getNombre());
 
         System.out.println(estudianteSingleton.getInstancia().getApellido());
+
+
+
+        // Ejemplo de crud  trabajando con el patron dao
+
+        PersonaDAO personaDAO = new PersonaDAOImpl();  // asi e que se especifica un objeto del patron dao
+
+        Persona persona = new Persona(1,"Carlos","perez","calle 3","446454",5);
+        Persona persona2 = new Persona(22,"Carla","rodriguez","calle 4","4555454",77);
+        Persona personaRepetida = new Persona(33,"Copia","nose","calle 4","4555454",77);
+        Persona personaRemove = new Persona(1,"Carlos","perez","calle 3","446454",5);
+        Persona personaActualizar = new Persona(33,"Copiaactualizada","sise","calle 4","4555454",77);
+
+
+        personaDAO.agregarNuevaPersona(persona);
+
+        personaDAO.agregarNuevaPersona(persona2);
+
+        personaDAO.agregarNuevaPersona(personaRepetida);
+
+        personaDAO.agregarNuevaPersona(personaRemove);
+
+        personaDAO.eliminarPersona(personaRemove);
+
+        personaDAO.mostrarPersonas();
+
+        personaDAO.buscarPersonaPorId(personaRepetida.getId());
+
+        personaDAO.actualizarPersona(personaActualizar);
+
+        personaDAO.mostrarPersonas();
 
 
 
